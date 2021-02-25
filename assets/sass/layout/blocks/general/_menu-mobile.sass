@@ -1,0 +1,27 @@
+#block-menumobile
+  &.menu--menu-mobile
+    background-color: $white
+    height: 100vh
+    left: 0
+    opacity: 0
+    padding: 1.5rem
+    position: absolute
+    transition: .2s
+    visibility: hidden
+    width: 100%
+    z-index: 9999
+
+    &.show_menu
+      opacity: 1
+      transition: .2s
+      visibility: visible
+
+    .menu-item
+      margin-bottom: 1rem
+
+      a
+        color: $grey
+        font-size: calc-rem(14px)
+        font-weight: 500
+        letter-spacing: .2px
+        text-transform: uppercase
