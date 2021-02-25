@@ -35,14 +35,12 @@
 <div{{ attributes.addClass(classes) }}>
   <div class="container">
     {{ title_prefix }}
+    {% if label %}
+      <h1{{ title_attributes }}>{{ label }}</h1>
+    {% endif %}
     {{ title_suffix }}
     {% block content %}
-      <div class="field--group">
-        {% if label %}
-            <div class="field--category">{{ label }}</div>
-        {% endif %}
-        {{ content }}
-      </div>
+      {{ content }}
     {% endblock %}
   </div>
 </div>
