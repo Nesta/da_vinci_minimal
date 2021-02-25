@@ -1,7 +1,73 @@
 header
-  padding: 2rem
+  background-color: $white
+  padding: 1rem 1rem
+  position: relative
+  top: 0
+  transition: .2s
+  z-index: 99999
+  +breakpoint($large)
+    padding: 2rem 1rem
+
+  .site-header
+    margin: 0 auto
+    max-width: 1440px
+
+  &.fixed
+    position: fixed
+    top: 0
+    transition: .2s
+    width: 100%
 
 .region-header
-  .menu
-    align-items: center
-    display: flex
+  .menu--main
+    .menu
+      align-items: center
+      display: flex
+      justify-content: space-around
+      margin: 0
+      position: relative
+
+      .menu-item
+        &:nth-child(3)
+          bottom: -100%
+          position: absolute
+          transform: translateY(55%)
+          +breakpoint($large)
+            transform: translateY(34%)
+
+          a
+            @extend .hide-accessible
+            background-image: url('../images/logo-header.svg')
+            background-position: center
+            background-repeat: no-repeat
+            background-size: contain
+            height: calc-rem(80px)
+            width: calc-rem(80px)
+            +breakpoint($large)
+              height: calc-rem(112px)
+              width: calc-rem(112px)
+
+        &:not(:nth-child(3))
+          display: none
+          +breakpoint($large)
+            display: block
+
+        a
+          color: $grey
+          font-size: calc-rem(14px)
+          font-weight: 500
+          letter-spacing: .2px
+          text-transform: uppercase
+          transition: .2s
+
+          &:hover
+            color: $red
+            transition: .2s
+
+  .icon-burger
+    background-image: url('../images/u_bars.png')
+    background-position: center
+    background-repeat: no-repeat
+    display: block
+    height: calc-rem(24px)
+    width: calc-rem(24px)
