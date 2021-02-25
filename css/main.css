@@ -846,6 +846,12 @@ body {
 
 .block-content-type-block_varieties {
   text-align: center;
+  margin-top: 5rem;
+}
+
+.block-content-type-block_varieties .field--name-field-paragraphs-varieties {
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 .block-content-type-block_varieties .field--type-text-with-summary {
@@ -1393,7 +1399,7 @@ body {
   padding: 1rem 2rem;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1170px) {
   .site-footer .footer-wrapper .region-footer {
     padding: 0 7rem;
   }
@@ -1442,7 +1448,7 @@ body {
   display: none;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1170px) {
   .site-footer #block-logofooter .field--type-text-with-summary span {
     display: block;
   }
@@ -1464,7 +1470,7 @@ body {
   justify-content: flex-end;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1170px) {
   #block-socialnetworks .field--type-text-with-summary p:first-child {
     margin-bottom: 0;
   }
@@ -1504,7 +1510,7 @@ body {
   text-align: right;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1170px) {
   #block-socialnetworks .field--type-text-with-summary .nestle-mobile {
     display: none;
   }
