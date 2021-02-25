@@ -1,7 +1,7 @@
 .site-footer
   background: $grey
   color: $white
-  
+
   a
     color: $white
     font-size: calc-rem(14px)
@@ -10,17 +10,21 @@
     +container
 
     .region-footer
-      height: calc-rem(96px)
-      display: flex
-      padding: 0 2rem
-      flex-direction: row
       align-items: center
+      box-sizing: content-box
+      display: flex
+      flex-direction: row
+      height: calc-rem(96px)
       justify-content: space-between
+      padding: 1rem 2rem
+      +breakpoint($xx-large)
+        padding: 0 7rem
 
   .menu--footer
     display: none
     +breakpoint($large)
       display: block
+
       ul.menu
         +clean-list
 
@@ -29,4 +33,73 @@
           padding: 0 2rem
 
   #block-logofooter
-    background: red
+    .field--type-text-with-summary
+      align-items: center
+      display: flex
+
+      .logo-footer
+        @extend .hide-accessible
+        background-image: url('../images/logo-footer.png')
+        background-position: center
+        background-repeat: no-repeat
+        height: calc-rem(64px)
+        width: calc-rem(62px)
+        margin-right: calc-rem(24px)
+
+      span
+        font-size: calc-rem(12px)
+        font-style: normal
+        font-weight: 400
+        letter-spacing: .2px
+        line-height: 18px
+        display: none
+        +breakpoint($xx-large)
+          display: block
+
+// Social Networks.
+#block-socialnetworks
+  .field--type-text-with-summary
+    align-items: center
+    display: flex
+    flex-flow: wrap row
+
+    p
+      width: 100%
+
+      &:first-child
+        align-items: center
+        display: flex
+        justify-content: flex-end
+        +breakpoint($xx-large)
+          margin-bottom: 0
+
+    a
+      @extend .hide-accessible
+      background-position: center
+      background-repeat: no-repeat
+      font-size: calc-rem(14px)
+      font-weight: 500
+      height: calc-rem(36px)
+      line-height: 18px
+      width: calc-rem(35px)
+
+      &.icon-fb
+        background-image: url('../images/facebook.png')
+
+      &.icon-tw
+        background-image: url('../images/twiter.png')
+
+      &.icon-in
+        background-image: url('../images/instagram.png')
+
+      &.icon-yt
+        background-image: url('../images/youtube.png')
+
+      &:not(:last-child)
+        margin-right: calc-rem(24px)
+
+    .nestle-mobile
+      text-align: right
+      +breakpoint($xx-large)
+        display: none
+
