@@ -1,4 +1,5 @@
 .block-content-type-tipo_categoria
+  +clearfix
   min-height: calc-rem(800px)
 
   .container
@@ -6,40 +7,62 @@
 
   .field--group
     position: relative
-    top: calc-rem(160px)
-    z-index: 3
+    margin-bottom: calc-rem(220px)
+    padding-left: 2rem
+    +breakpoint($large)
+      margin-bottom: 0
+      padding-top: 9rem
+      padding-left: 0
 
   .field--category
     color: $orange
 
   .field--type-image
-    position: absolute
-    top: 0
-    right: 18%
+    img
+      width: 100%
+      height: auto
+    +breakpoint($large)
+      position: absolute
+      top: 0
+      right: 18%
+      z-index: 2
 
   .field--type-text-with-summary
-    font-size: calc-rem(32px)
-    line-height: calc-rem(40px)
-    width: calc-rem(807px)
+    font-size: calc-rem(24px)
+    line-height: calc-rem(32px)
     font-family: $gotham-bold
     margin-top: calc-rem(20px)
+    position: relative
+    z-index: 3
+    +breakpoint($large)
+      width: calc-rem(807px)
+      font-size: calc-rem(32px)
+      line-height: calc-rem(40px)
 
+  .field--name-field-extra-info
+    position: relative
+    z-index: 3
     ul
       margin: 0
       padding: 0
-      margin-top: calc-rem(150px)
+      +breakpoint($large)
+        margin-top: calc-rem(100px)
+        margin-bottom: calc-rem(100px)
 
       li
         font-family: $gotham
         line-height: 1.5rem
         font-size: calc-rem(16px)
         +clean-list
-        width: calc-rem(255px)
+        width: calc-rem(168px)
+        +breakpoint($large)
+          width: calc-rem(255px)
         float: left
+        padding-top: 3rem
 
         &:first-child
-          background: red
+          background: url(../images/box.png) 0 0 no-repeat
           margin-right: calc-rem(20px)
 
         &:last-child
-          background: pink
+          background: url(../images/truck.png) 0 0 no-repeat

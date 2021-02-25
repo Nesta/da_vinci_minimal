@@ -1,0 +1,56 @@
+.block-content-type-tipo_banner_principal
+  .container
+    position: relative
+  &:after
+    content: ''
+    position: absolute
+    bottom: -80%
+    left: 0
+    width: 100%
+    height: calc-rem(736px)
+    background: url(../images/palma-baja.png) 0 0 no-repeat
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: calc-rem(736px)
+    background: url(../images/palma-alta.png) 100% 0 no-repeat
+  background: url(../images/textura_papel.png) 0 0 repeat
+  height: calc-rem(736px)
+  h1
+    min-width: calc-rem(260px)
+    float: left
+    width: 70%
+    padding: 5rem 0 0 3rem
+    +breakpoint($large)
+      padding: 10rem 0 0 7rem
+      width: calc-rem(730px)
+      
+  .field--name-field-image
+    position: absolute
+    right: 0
+    img
+      width: 100%
+      height: auto
+      +breakpoint($large)
+        margin-left: 0
+    top: 4rem
+
+  .field--type-text-with-summary
+    display: none
+    clear: both
+    min-width: calc-rem(260px)
+    width: 70%
+    padding: 5rem 0 0 3rem
+    +breakpoint($large)
+      display: block
+      padding: 0rem 0 0 7rem
+      width: calc-rem(730px)
+
+  .field--name-field-link
+    clear: both
+    a
+      +button(primary)
+      margin-left: 7rem
