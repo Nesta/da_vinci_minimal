@@ -1,18 +1,27 @@
 // Styles for Testimonials Block types.
 .block-content-type-tipo_testimonios
-  margin-top: calc-rem(300px)
-  margin-bottom: calc-rem(200px)
+  margin-top: calc-rem(100px)
+  margin-bottom: calc-rem(300px)
+  +breakpoint($large)
+    margin-top: calc-rem(300px)
+    margin-bottom: calc-rem(200px)
   +clearfix
 
   &:before
     content: ''
     position: absolute
-    top: calc-rem(-100px)
-    right: 0
-    height: calc-rem(560px)
-    background: rgb(255,255,255)
-    background: linear-gradient(90deg, rgba(255,255,255,1) 28%, rgba(239,143,85,1) 28%)
     width: 100%
+    bottom: 0
+    left: 0
+    height: calc-rem(850px)
+    background: rgb(255,255,255)
+    background: linear-gradient(180deg, rgba(255,255,255,1) 28%, rgba(239,143,85,1) 28%)
+    +breakpoint($large)
+      top: calc-rem(-100px)
+      right: 0
+      height: calc-rem(560px)
+      background: rgb(255,255,255)
+      background: linear-gradient(90deg, rgba(255,255,255,1) 28%, rgba(239,143,85,1) 28%)
 
   .field
     &--type-image
@@ -58,7 +67,10 @@
 
     &--name-field-extra-imagen
       position: absolute
-      bottom: -70%
-      right: -15%
+      bottom: -50%
+      right: -60px
+      img
+        width: 80%
+        height: auto
     
 
