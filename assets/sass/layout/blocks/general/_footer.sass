@@ -1,0 +1,32 @@
+.site-footer
+  background: $grey
+  color: $white
+  
+  a
+    color: $white
+    font-size: calc-rem(14px)
+
+  .footer-wrapper
+    +container
+
+    .region-footer
+      height: calc-rem(96px)
+      display: flex
+      padding: 0 2rem
+      flex-direction: row
+      align-items: center
+      justify-content: space-between
+
+  .menu--footer
+    display: none
+    +breakpoint($large)
+      display: block
+      ul.menu
+        +clean-list
+
+        li
+          display: inline-block
+          padding: 0 2rem
+
+  #block-logofooter
+    background: red

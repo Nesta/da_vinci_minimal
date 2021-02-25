@@ -4,42 +4,6 @@
 /// @group mixins
 ////
 
-/// Absolute gradient
-=absolute-gradient($direction: to top, $color-from: transparent, $color-to: transparent, $pseudo: after)
-  position: relative
-
-  &:#{$pseudo}
-    background: linear-gradient(#{$direction}, #{$color-from}, #{$color-to})
-    content: ''
-    display: block
-    height: 100%
-    left: 0
-    position: absolute
-    top: 0
-    width: 100%
-
-/// Absolute link
-=absolute-link
-  background: none
-  display: block
-  font-size: 0
-  height: 100%
-  left: 0
-  margin: 0
-  padding: 0
-  position: absolute
-  top: 0
-  width: 100%
-
-  &:hover
-    background: none
-
-/// Border.
-=border($width: 1px, $style: solid, $color: $border, $position: style)
-  border-#{$position}: $style
-  border-color: $color
-  border-width: $width
-
 /// Buttons.
 
 =button($button-style)

@@ -1,6 +1,5 @@
 // HTML
 
-/// @ignore Font size.
 $default-font-size: $rem-base
 
 html
@@ -10,14 +9,11 @@ html
 
 // BODY
 
-/// @ignore Body background color.
-$body-background-color: $cream
+$body-background-color: $white
 
-/// @ignore Default color.
-$default-color: $grey
+$default-color: $black
 
-/// @ignore Default font family.
-$default-font-family: $roboto
+$default-font-family: $gotham
 
 body
   background-color: $body-background-color
@@ -30,11 +26,9 @@ body
 
 // HEADINGS
 
-/// @ignore Titles font family.
-$title-font-family: $roboto-condensed
+$title-font-family: $gotham-bold
 
-/// @ignore Titles color.
-$title-color: $secondary-shade-color
+$title-color: $black
 
 h1,
 h2,
@@ -44,7 +38,7 @@ h5,
 h6
   color: $title-color
   font-family: $title-font-family
-  font-weight: 700
+  font-weight: 500
   margin: 0
 
 h2,
@@ -64,25 +58,26 @@ h6
   line-height: 1.4
 
 h1
-  font-size: calc-rem(40px)
-  line-height: 1.13
+  font-size: calc-rem(32px)
+  line-height: calc-rem(40px)
   margin: 2rem 0 1.5rem
   +breakpoint($large)
-    font-size: calc-rem(44px)
+    font-size: calc-rem(56px)
+    line-height: calc-rem(72px)
     margin: 1.5rem 0
 
   &.page-title
     margin-top: 0
 
 h2
-  font-size: calc-rem(36px)
+  font-size: calc-rem(28px)
+  line-height: calc-rem(33px)
   +breakpoint($large)
     font-size: calc-rem(40px)
+    line-height: calc-rem(48px)
 
 h3
-  font-size: calc-rem(32px)
-  +breakpoint($large)
-    font-size: calc-rem(36px)
+  font-size: calc-rem(20px)
 
 h4
   font-size: calc-rem(28px)
@@ -110,10 +105,8 @@ p
 
 // LINKS
 
-/// @ignore Link color.
 $link-color: $main-color
 
-/// @ignore Link hover color.
 $link-hover-color: tint($link-color, 15%)
 
 a
@@ -130,10 +123,8 @@ a
 
 // BLOCKQUOTES
 
-/// @ignore Blockquotes color.
 $blockquote-color: $default-color
 
-/// @ignore Blockquotes font family.
 $blockquote-font-family: $default-font-family
 
 blockquote
@@ -167,10 +158,8 @@ blockquote
 
 // Mark
 
-/// @ignore  Mark Background color.
 $mark-background-color: $grey
 
-/// @ignore  Mark Color.
 $mark-color: $white
 
 mark,

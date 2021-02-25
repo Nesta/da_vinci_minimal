@@ -1,0 +1,82 @@
+// Styles for Webform's Block types.
+
+.block-content-type-tipo_webform
+  background: url(../images/fondo_terrazo.png) center top no-repeat
+  background-size: cover
+  overflow: hidden
+
+  .field
+
+    &--type-image
+      display: none
+
+      +breakpoint($large)
+        position: relative
+        top: calc-rem(10px)
+        display: block
+        float: left
+        width: 33%
+
+    &--group
+      padding: 0 3rem
+      margin-bottom: calc-rem(50px)
+
+      +breakpoint($large)
+        margin: 0
+        padding: 0
+        width: 66%
+        float: left
+        position: relative
+        z-index: 2
+
+      h2
+        text-align: center
+        margin-top: calc-rem(160px)
+        margin-bottom: calc-rem(50px)
+
+        +breakpoint($large)
+          text-align: left
+          width: calc-rem(500px)
+          margin-top: calc-rem(220px)
+
+      .field--type
+        &-text-with-summary
+          display: none
+
+          +breakpoint($large)
+            display: block
+            font-size: calc-rem(18px)
+
+
+        &-text-with-summary,
+        &-webform          
+
+          +breakpoint($large)
+            width: calc-rem(500px)
+            margin-bottom: calc-rem(30px)
+
+        &-webform          
+            input[type=text],
+            input[type=email]
+              width: 100%
+              font-size: calc-rem(15px)
+              padding: calc-rem(15px)
+              margin-bottom: calc-rem(20px)
+                
+              +breakpoint($large)
+                width: 80%
+
+        &-text-long
+          font-size: calc-rem(13px)
+
+      .form-submit
+        width: 100%
+
+        +breakpoint($large)
+          width: auto
+
+
+          
+    
+
+

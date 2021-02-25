@@ -8,8 +8,7 @@ development enviroment) or 'gulp styles:pro' (production enviroment)
 you will be in the same situation.
 
 Sass files are classified into different categories:
-· Base: skinr file (which contains typography styles) and susy (which contains
-Susy config declaration)
+· Base: skinr file (which contains typography styles).
 · Components: styles for component elements such as breadcrumbs, pager,
 buttons... and other elements you can be used anywhere on the website.
 · Layout: styles for layout elements such as header, footer, sidebar...

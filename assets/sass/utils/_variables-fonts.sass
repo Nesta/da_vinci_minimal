@@ -4,20 +4,36 @@
 
 /// External
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,400i,700')
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
 
 /// Internal
-$fonts-path: '../fonts' !default
-/*
-  @font-face
-    font-family: 'Da-Vinci'
-    font-style: normal
-    font-weight: normal
-    src: url('#{$fonts-path}/Da-Vinci.eot?nk2pqb')
-    src: url('#{$fonts-path}/Da-Vinci.eot?nk2pqb#iefix') format('embedded-opentype'), url('#{$fonts-path}/Da-Vinci.ttf?nk2pqb') format('truetype'), url('#{$fonts-path}/Da-Vinci.woff?nk2pqb') format('woff'), url('#{$fonts-path}/Da-Vinci.svg?nk2pqb#Da-Vinci') format('svg')
+$fonts-path: '../assets/fonts' !default
+@font-face
+  font-family: 'Da-Vinci'
+  font-style: normal
+  font-weight: normal
+  src: url('#{$fonts-path}/Da-Vinci.eot?nk2pqb')
+  src: url('#{$fonts-path}/Da-Vinci.eot?nk2pqb#iefix') format('embedded-opentype'), url('#{$fonts-path}/Da-Vinci.ttf?nk2pqb') format('truetype'), url('#{$fonts-path}/Da-Vinci.woff?nk2pqb') format('woff'), url('#{$fonts-path}/Da-Vinci.svg?nk2pqb#Da-Vinci') format('svg')
+
+@font-face
+  font-family: 'GothamRounded-Book'
+  font-style: normal
+  font-weight: normal
+  src: url('#{$fonts-path}/GothamRounded-Book.eot?nk2pqb')
+  src: url('#{$fonts-path}/GothamRounded-Book.eot?nk2pqb#iefix') format('embedded-opentype'), url('#{$fonts-path}/GothamRounded-Book.ttf?nk2pqb') format('truetype'), url('#{$fonts-path}/GothamRounded-Book.woff?nk2pqb') format('woff'), url('#{$fonts-path}/GothamRounded-Book.svg?nk2pqb#GothamRounded-Book') format('svg')
+
+@font-face
+  font-family: 'GothamRounded-Medium'
+  font-weight: 500
+  font-style: normal
+  font-display: swap
+  src: url('#{$fonts-path}/GothamRounded-Medium.eot?nk2pqb')
+  src: url('#{$fonts-path}/GothamRounded-Medium.eot?nk2pqb#iefix') format('embedded-opentype'), url('#{$fonts-path}/GothamRounded-Medium.ttf?nk2pqb') format('truetype'), url('#{$fonts-path}/GothamRounded-Medium.woff?nk2pqb') format('woff'), url('#{$fonts-path}/GothamRounded-Medium.svg?nk2pqb#GothamRounded-Medium') format('svg')
 
 /// Typography
-$roboto: 'Roboto', sans-serif
-$roboto-condensed: 'Roboto Condensed', sans-serif
+$gotham: 'GothamRounded-Book', sans-serif
+$gotham-bold: 'GothamRounded-Medium', sans-serif
+$caveat: 'Caveat', cursive
 $icomoon-font: 'Da-Vinci'
 
 /// Icomoon icons

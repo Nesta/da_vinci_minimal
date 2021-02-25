@@ -1,0 +1,64 @@
+// Styles for Testimonials Block types.
+.block-content-type-tipo_testimonios
+  margin-top: calc-rem(300px)
+  margin-bottom: calc-rem(200px)
+  +clearfix
+
+  &:before
+    content: ''
+    position: absolute
+    top: calc-rem(-100px)
+    right: 0
+    height: calc-rem(560px)
+    background: rgb(255,255,255)
+    background: linear-gradient(90deg, rgba(255,255,255,1) 28%, rgba(239,143,85,1) 28%)
+    width: 100%
+
+  .field
+    &--type-image
+      float: left
+      position: relative
+      z-index: 3
+
+
+    &--group
+      float: left
+      width: calc-rem(580px)
+      padding-left: calc-rem(80px)
+      color: $white
+      position: relative
+      z-index: 3
+
+    &--type-text-with-summary,
+    &--author
+      font-family: $caveat
+      line-height: calc-rem(56px)
+
+    &--type-text-with-summary
+      font-size: calc-rem(48px)
+      padding-top: 6rem
+      blockquote
+        margin: 0
+        margin-bottom: calc-rem(20px)
+        padding: 0
+        &:before
+          display: none
+        &:after
+          color: $dark-orange
+          left: 0
+          font-size: 5rem
+          width: 5rem
+          height: 5rem
+
+    &--author
+      font-size: calc-rem(32px)
+
+    &--type-text-long
+      font-size: calc-rem(16px)
+
+    &--name-field-extra-imagen
+      position: absolute
+      bottom: -70%
+      right: -15%
+    
+

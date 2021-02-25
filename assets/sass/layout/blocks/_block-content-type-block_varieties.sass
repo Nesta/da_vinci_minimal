@@ -1,0 +1,44 @@
+// Styles for Varieties Block types.
+.block-content-type-block_varieties
+  text-align: center
+
+  .field--type-text-with-summary
+    margin: 0 auto
+    font-size: calc-rem(16px)
+    margin-top: calc-rem(20px)
+    width: 90%
+
+    +breakpoint($large)
+      margin: 0 auto
+      font-size: calc-rem(18px)
+      width: calc-rem(730px)
+      margin-bottom: calc-rem(30px)
+      margin-top: calc-rem(20px)
+
+  .field--type-image
+    width: calc-rem(300px)
+    height: calc-rem(300px)
+    margin: 0 auto
+
+    img
+      width: 100%
+      height: auto
+
+  .field--type-string
+    font-family: $gotham-bold
+    font-size: calc-rem(20px)
+    margin-top: calc-rem(20px)
+    margin-bottom: calc-rem(20px)
+
+  .field--type-text-long
+    margin: 0 auto
+    width: calc-rem(320px)
+    font-size: calc-rem(16px)
+    margin-top: calc-rem(20px)
+    margin-bottom: calc-rem(20px)
+
+  .field--type-link 
+    margin-top: calc-rem(80px)
+    margin-bottom: calc-rem(20px)
+		a
+    	+button(primary)
