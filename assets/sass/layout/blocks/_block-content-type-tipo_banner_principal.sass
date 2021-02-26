@@ -1,81 +1,102 @@
 .block-content-type-tipo_banner_principal
   .container
     position: relative
+
   &:after
-    content: ''
-    position: absolute
-    bottom: -80%
-    left: 0
-    width: 100%
-    height: 30rem
-    +breakpoint($large)
-      height: calc-rem(736px)
-      background-size: 25%
     background: url(../images/palma-baja.png) 0 0 no-repeat
     background-size: 30%
-  &:before
+    bottom: -80%
     content: ''
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
     height: 30rem
+    left: 0
+    position: absolute
+    width: 100%
+
     +breakpoint($large)
-      height: calc-rem(736px)
       background-size: 25%
+      height: calc-rem(736px)
+
+  &:before
     background: url(../images/palma-alta.png) 100% 0 no-repeat
     background-size: 30%
+    content: ''
+    height: 30rem
+    left: 0
+    position: absolute
+    top: 0
+    width: 100%
+    +breakpoint($large)
+      background-size: 25%
+      height: calc-rem(736px)
+
+
   background: url(../images/textura_papel.png) 0 0 repeat
   height: 30rem
+
   +breakpoint($large)
     height: calc-rem(736px)
+
   h1
-    min-width: calc-rem(260px)
     float: left
-    width: calc-rem(480px)
-    padding: 5rem 0 0 3rem
+    margin: 2rem 0 2.5rem
+    min-width: calc-rem(260px)
+    padding: 3.5rem 0 0 1rem
     position: relative
+    width: calc-rem(302.4px)
     z-index: 4
+    +breakpoint($medium)
+      padding: 3.5rem 0 0 5rem
+      width: calc-rem(438px)
     +breakpoint($large)
       padding: 10rem 0 0 7rem
       width: calc-rem(730px)
-      
+
   .field--name-field-image
+    background: url(../images/capspulas_mobile.png) right 0 no-repeat
     position: absolute
     right: 0
+    top: 6rem
     z-index: 3
-    background: url(../images/capspulas_mobile.png) right 0 no-repeat
+
     +breakpoint($large)
       background: none
+
     img
-      width: 100%
       height: auto
+      opacity: 0
       position: relative
       top: 10rem
-      opacity: 0
+      width: 100%
+
       +breakpoint($large)
-        opacity: 1
         margin-left: 0
+        opacity: 1
         top: 0
-    top: 6rem
+
 
   .field--type-text-with-summary
-    display: none
     clear: both
-    position: relative
-    z-index: 4
+    display: none
     min-width: calc-rem(260px)
-    width: 70%
     padding: 5rem 0 0 3rem
+    position: relative
+    width: 70%
+    z-index: 4
     +breakpoint($large)
       display: block
-      padding: 0rem 0 0 7rem
+      padding: 0 0 0 7rem
       width: calc-rem(730px)
 
   .field--name-field-link
     clear: both
     position: relative
     z-index: 4
+
     a
       +button(primary)
-      margin-left: 7rem
+      margin-left: 1rem
+      +breakpoint($medium)
+        margin-left: 5rem
+      +breakpoint($large)
+        margin-left: 7rem
+

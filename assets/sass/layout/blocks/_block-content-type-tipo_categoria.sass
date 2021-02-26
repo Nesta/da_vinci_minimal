@@ -6,59 +6,80 @@
     position: relative
 
   .field--group
+    margin-bottom: calc-rem(84px)
     position: relative
-    margin-bottom: calc-rem(220px)
-    padding-left: 2rem
     +breakpoint($large)
       margin-bottom: 0
-      padding-top: 9rem
       padding-left: 0
+      padding-top: 9rem
 
   .field--category
     color: $orange
+    font-size: calc-rem(16px)
+    font-weight: 500
+    letter-spacing: .5px
+    line-height: calc-rem(18px)
+    padding: 0 1rem
+    +breakpoint($xx-large)
+      padding: 0 6rem
 
   .field--type-image
     img
-      width: 100%
       height: auto
+      width: 100%
     +breakpoint($large)
       position: absolute
-      top: 0
       right: 18%
+      top: 0
       z-index: 2
+    +breakpoint($xx-large)
+      right: 12%
 
   .field--type-text-with-summary
-    font-size: calc-rem(24px)
-    line-height: calc-rem(32px)
     font-family: $gotham-bold
+    font-size: calc-rem(24px)
+    font-weight: 500
+    line-height: calc-rem(40px)
     margin-top: calc-rem(20px)
+    padding: 0 1rem
     position: relative
     z-index: 3
+
     +breakpoint($large)
-      width: calc-rem(807px)
       font-size: calc-rem(32px)
       line-height: calc-rem(40px)
+      width: calc-rem(807px)
+    +breakpoint($xx-large)
+      padding: 0 6rem
+      width: calc-rem(983px)
 
   .field--name-field-extra-info
+    padding: 0 1rem
     position: relative
     z-index: 3
+    +breakpoint($xx-large)
+      padding: 0 6rem
+
     ul
       margin: 0
       padding: 0
       +breakpoint($large)
-        margin-top: calc-rem(100px)
         margin-bottom: calc-rem(100px)
+        margin-top: calc-rem(100px)
 
       li
-        font-family: $gotham
-        line-height: 1.5rem
-        font-size: calc-rem(16px)
         +clean-list
-        width: calc-rem(168px)
+        float: left
+        font-family: $gotham
+        font-size: calc-rem(16px)
+        line-height: 1.5rem
+        margin-bottom: calc-rem(32px)
+        padding-top: 3rem
+        +breakpoint(425px)
+          margin-bottom: 0
+          width: calc-rem(168px)
         +breakpoint($large)
           width: calc-rem(255px)
-        float: left
-        padding-top: 3rem
 
         &:first-child
           background: url(../images/box.png) 0 0 no-repeat

@@ -1,10 +1,10 @@
 // Styles for Testimonials Block types.
 .block-content-type-tipo_testimonios
-  margin-top: calc-rem(100px)
   margin-bottom: calc-rem(100px)
+  margin-top: calc-rem(100px)
   +breakpoint($large)
-    margin-top: calc-rem(300px)
     margin-bottom: calc-rem(200px)
+    margin-top: calc-rem(300px)
   +clearfix
 
   &:before
@@ -28,14 +28,15 @@
       float: left
       position: relative
       z-index: 3
+      +breakpoint($xx-large)
+        padding-left: 6rem
+
       img
         width: 80%
         height: auto
         +breakpoint($large)
           width: 100%
           height: auto
-
-
 
     &--group
       float: left
@@ -89,5 +90,5 @@
         +breakpoint($large)
           width: 80%
         height: auto
-    
+
 

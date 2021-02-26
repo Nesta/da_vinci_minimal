@@ -43,16 +43,16 @@
         background-position: center
         background-repeat: no-repeat
         height: calc-rem(64px)
-        width: calc-rem(62px)
         margin-right: calc-rem(24px)
+        width: calc-rem(62px)
 
       span
+        display: none
         font-size: calc-rem(12px)
         font-style: normal
         font-weight: 400
         letter-spacing: .2px
         line-height: 18px
-        display: none
         +breakpoint($large)
           display: block
 
@@ -69,6 +69,7 @@
       &:first-child
         align-items: center
         display: flex
+        flex-flow: row wrap
         justify-content: flex-end
         +breakpoint($large)
           margin-bottom: 0
@@ -96,7 +97,9 @@
         background-image: url('../images/youtube.png')
 
       &:not(:last-child)
-        margin-right: calc-rem(24px)
+        margin-right: calc-rem(8px)
+        +breakpoint($large)
+          margin-right: calc-rem(24px)
 
     .nestle-mobile
       text-align: right
