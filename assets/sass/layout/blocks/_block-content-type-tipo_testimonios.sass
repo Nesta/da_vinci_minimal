@@ -1,7 +1,7 @@
 // Styles for Testimonials Block types.
 .block-content-type-tipo_testimonios
   margin-top: calc-rem(100px)
-  margin-bottom: calc-rem(300px)
+  margin-bottom: calc-rem(100px)
   +breakpoint($large)
     margin-top: calc-rem(300px)
     margin-bottom: calc-rem(200px)
@@ -28,12 +28,22 @@
       float: left
       position: relative
       z-index: 3
+      img
+        width: 80%
+        height: auto
+        +breakpoint($large)
+          width: 100%
+          height: auto
+
 
 
     &--group
       float: left
-      width: calc-rem(580px)
-      padding-left: calc-rem(80px)
+      padding-left: calc-rem(30px)
+      max-width: calc-rem(400px)
+      +breakpoint($large)
+        max-width: calc-rem(580px)
+        padding-left: calc-rem(80px)
       color: $white
       position: relative
       z-index: 3
@@ -44,7 +54,9 @@
       line-height: calc-rem(56px)
 
     &--type-text-with-summary
-      font-size: calc-rem(48px)
+      font-size: calc-rem(32px)
+      +breakpoint($large)
+        font-size: calc-rem(48px)
       padding-top: 6rem
       blockquote
         margin: 0
@@ -67,10 +79,15 @@
 
     &--name-field-extra-imagen
       position: absolute
-      bottom: -50%
-      right: -60px
+      bottom: -20%
+      +breakpoint($large)
+        right: calc-rem(-60px)
+        bottom: -50%
+      text-align: right
       img
-        width: 80%
+        width: 60%
+        +breakpoint($large)
+          width: 80%
         height: auto
     
 
