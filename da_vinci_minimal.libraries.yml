@@ -11,6 +11,7 @@ global-js:
     js/vendors/jquery.viewport.js: {}
     js/vendors/css_browser_selector.js: {}
     js/custom.js: {}
+    js/anchor.js: {}
   dependencies:
     - core/jquery
     - core/jquery.once
