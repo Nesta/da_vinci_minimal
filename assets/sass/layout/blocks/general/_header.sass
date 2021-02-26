@@ -1,22 +1,16 @@
 header
   background-color: $white
   padding: 1rem 1rem
-  position: relative
+  position: fixed
   top: 0
-  transition: .2s
   z-index: 9
+  width: 100%
   +breakpoint($large)
     padding: 2rem 1rem
 
   .site-header
     margin: 0 auto
     max-width: 1440px
-
-  &.fixed
-    position: fixed
-    top: 0
-    transition: .2s
-    width: 100%
 
 .region-header
   .menu--main

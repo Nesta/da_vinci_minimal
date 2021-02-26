@@ -15,13 +15,6 @@
     var resolucion = $(window).width();
 
     // Function.
-    $(window).on('scroll', function() {
-      if ($(window).scrollTop() >= height_header){
-        $('header').addClass('fixed');
-      } else {
-        $('header').removeClass('fixed');
-      }
-    });
 
     // Menu header mobile.
     if(resolucion < 1170){
